@@ -1,5 +1,5 @@
 <style>
-    .dropdown {
+    /*.dropdown {
         position: relative;
         display: inline-block;
     }
@@ -24,11 +24,58 @@
         background-color: #0d6efd;
         color: white
     }
+
+
+    .dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-menu1 {
+  display: none;
+  position: relative;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-menu1 a {
+  text-decoration: none;
+  display: block;
+}
+.show {display:block;}
 </style>
+<script>
+function myFunction(id) {
+    document.getElementById(id).classList.toggle("show");
+}
+window.onclick = function(event) {
+    if (!event.target.matches('.menu2')) {
+        var dropdowns = document.getElementsByClassName("dropdown-menu1");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+</script>
 <div class=" container">
     <div class=" dropdown row w-100 mb-2">
-        <button class="btn btn-primary btn-lg btn-block w-100 dropdown-toggle menu2" type="button"  data-toggle="dropdown">2022</button>
-        <ul class="dropdown-menu1 bg-secondary" role="menu" aria-labelledby="menu2">
+        <button onclick="myFunction('22')" class="btn btn-primary btn-lg btn-block w-100" type="button" data-toggle="dropdown">2022</button>
+        <ul class="dropdown-menu1 bg-secondary" id="22">
             <div class="row"><a class="btn btn-secondary" href="https://zuzumalicka.rajce.idnes.cz/14.10.2022_-_Drakiada/" role="button">Drakiáda - 14.10.2022</a></div>
             <div class="row"><a class="btn btn-secondary" href="https://zuzumalicka.rajce.idnes.cz/11.9.2022_-_MLOK_Vrbice/" role="button">MLOK Vrbice - 11.9.2022</a></div>
             <div class="row"><a class="btn btn-secondary" href="https://zuzumalicka.rajce.idnes.cz/10.9.2022_-_MLOK_Horni_Sucha/" role="button">MLOK Horní Suchá - 10.9.2022</a></div>
@@ -43,81 +90,219 @@
         </ul>
     </div>
     <div class="dropdown row w-100 mb-2">
-        <button class="btn btn-primary btn-lg btn-block w-100 dropdown-toggle menu2" type="button"  data-toggle="dropdown">2021</button>
-        <ul class="dropdown-menu1 bg-secondary" role="menu" aria-labelledby="menu2">
+        <button onclick="myFunction('21')" class="btn btn-primary btn-lg btn-block w-100" type="button"  data-toggle="dropdown">2021</button>
+        <ul class="dropdown-menu1 bg-secondary" role="menu" aria-labelledby="menu2" id="21">
+            <div class="row"><a class="btn btn-secondary" href="" role="button">Ocenění MH a dorostu na městském úřadě - 20.12.2021</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">MH + dorost, ZPV, Kopytov  - 16.10.2021</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">NDT Rychvald - 3.10.2021</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">Havířov Město - 2.10.2021</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">4.kolo TFA ligy pro MH a dorost - Soběšovice - 25.9.2021</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">MH, Vrbice - 12.9.2021</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">MH, Horní Suchá - 11.9.2021</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">MH, Rychvald - 5.9.2021</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">3.kolo TFA ligy pro MH a dorost - Ostrava Hošťalkovice - 4.9.2021</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">2.kolo TFA ligy pro MH a dorost - Háj ve Slezsku - 28.8.2021</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">MH - chata Skalka - 1.8.-6.8.2021</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">Ukázka na Slavoji - 11.7.2021</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">MH + dorost, Orlová Poruba - 26.6.2021</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">1.kolo TFA ligy pro MH a dorost - Horní Suchá - 19.6.2021</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">dorost, Krajské kolo v požárním sportu, Opava - 6.6.2021</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">Starší žáci, Krajské kolo, Opava - 5.6.2021</a></div>
+        </ul>
+    </div>
+    <div class="dropdown row w-100 mb-2">
+        <button onclick="myFunction('20')" class="btn btn-primary btn-lg btn-block w-100" type="button"  data-toggle="dropdown">2020</button>
+        <ul class="dropdown-menu1 bg-secondary" role="menu" aria-labelledby="menu2" id="20">
+        <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">MH + dorost, Mikuláš - 9.12.2020</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">MH + dorost, noční soutěž Těrlicko Hradiště - 25.9.2020</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">Čerpání vody - 13.10.2020</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">Dorost - Orlová Poruba - 27.9.2020</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">MH + dorost, Těrlicko Hradiště noční soutěž - 26.9.2020</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">MH, Kopytov - 26.9.2020</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">MH + dorost - Vrbice - 20.9.2020</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">MH, Chotěbuz - 19.9.2020</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">MH + dorost, Rychvald - 6.9.2020</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">Soutěž o putovní pohár KSH MSK - 5.9.2020</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">soutěž Doubrava - 29.8.2020</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">Soutěž Orlová Poruba - 29.8.2020</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">Skalka - 1.8 - 6.8.2020</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">Čerpání vody - 2.7.2020</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">Brigáda na HZ - 27.6.2020</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">VVH - 18.1.2020</a></div>
+        </ul>
+    </div>
+    <div class="dropdown row w-100 mb-2">
+        <button onclick="myFunction('19')" class="btn btn-primary btn-lg btn-block w-100" type="button"  data-toggle="dropdown">2019</button>
+        <ul class="dropdown-menu1 bg-secondary" role="menu" aria-labelledby="menu2" id="19">
+        <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+        </ul>
+    </div>
+    <div class="dropdown row w-100 mb-2">
+        <button onclick="myFunction('18')" class="btn btn-primary btn-lg btn-block w-100" type="button"  data-toggle="dropdown">2018</button>
+        <ul class="dropdown-menu1 bg-secondary" role="menu" aria-labelledby="menu2" id="18">
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
+        </ul>
+    </div>
+    <div class="dropdown row w-100 mb-2">
+        <button onclick="myFunction('17')" class="btn btn-primary btn-lg btn-block w-100" type="button"  data-toggle="dropdown">2017</button>
+        <ul class="dropdown-menu1 bg-secondary" role="menu" aria-labelledby="menu2" id="17">
+            <div class="row"><a class="btn btn-secondary" href="" role="button">JSDH - Cvičení - 18.2.2017</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">MH - Hala Havířov - 25.2.2017</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">MH - exkurze, HZS MSK - Ostrava Přívoz - 1.3.2017</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">Pochování Basy - 4.3.2017</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">MH - Hala Petrovice - 11.3.2017</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">MDŽ - 11.3.2017</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">Josefovská soutěž - 18.3.2017</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">MH - Karneval - 22.3.2017</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">MH - Plnění odznaků odborností - 31.3.2017</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">MH - Hasičské muzeum Polsko Myslowice - 22.4.2017</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">Ukázka - 1.5.2017</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">Křest auta Tatra 815 - 5.5.2017</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">MH - Orlová Město - 6.5.2017</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">MH - Těrlicko Hradiště - 13.5.2017</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">MH - Plamen - 20.5.2017</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">Bohumín Šunychl - soutěž - 27.5.2017</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">MH - Globus CUP v Opavě - 28.5.2017</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">MH - Doubrava - 10.6.2017</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">MH - Karviná Hranice - 11.6.2017</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">MH - Bohumín Záblatí - 17.6.2017</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">MH - Petrovice Závada - 18.6.2017</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">Orlová Město - soutěž - 24.6.2017</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">MH - Petřvald - 24.6.2017</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">MH - Havířov Město - 25.6.2017</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">Letní slavnosti a soutěž - 5.7.2017</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">Bohumín Záblatí - soutěž - 22.7.2017</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">Námětové cvičení Okrsku Orlová - 25.7.2017</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">Dolní Marklovice, sání z řeky - soutěž - 5.8.2017 </a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">Výlet MH, chata Skalka - 7.8.-10.8.2017</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">Petřvald - soutěž - 12.8.2017</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">Doubrava - sání - 19.8.2017</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">Bohumín Záblatí - noční soutěž - 19.8.2017</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">TFA, FIREFIGHTERS CHALENGE - Ludgeřovice - 2.9.207</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">MH - Rychvald - 10.9.2017</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">MH - Vrbice - 11.9.2017</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">Havířov město - soutěž - 7.10.2017</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">Kopytov - soutěž - 8.10.2017</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">MH - Kopytov - 8.10.2017</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">MH - Závod požárnické všestrannosti - 14.10.2017</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">NDT - Kopytov - 15.10.2017</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">MH - výzdoba - 29.11.2017</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">MH - Mikuláš - 6.12.2017</a></div>
+            <div class="row"><a class="btn btn-secondary" href="" role="button">MH - Vánoční - 20.12.2017</a></div>
+        </ul>
+    </div>
+    <div class="dropdown row w-100 mb-2">
+        <button onclick="myFunction('16')" class="btn btn-primary btn-lg btn-block w-100" type="button"  data-toggle="dropdown">2016</button>
+        <ul class="dropdown-menu1 bg-secondary" role="menu" aria-labelledby="menu2" id="16">
 
         </ul>
     </div>
     <div class="dropdown row w-100 mb-2">
-        <button class="btn btn-primary btn-lg btn-block w-100 dropdown-toggle menu2" type="button"  data-toggle="dropdown">2020</button>
-        <ul class="dropdown-menu1 bg-secondary" role="menu" aria-labelledby="menu2">
+        <button onclick="myFunction('15')" class="btn btn-primary btn-lg btn-block w-100" type="button"  data-toggle="dropdown">2015</button>
+        <ul class="dropdown-menu1 bg-secondary" role="menu" aria-labelledby="menu2" id="15">
 
         </ul>
     </div>
     <div class="dropdown row w-100 mb-2">
-        <button class="btn btn-primary btn-lg btn-block w-100 dropdown-toggle menu2" type="button"  data-toggle="dropdown">2019</button>
-        <ul class="dropdown-menu1 bg-secondary" role="menu" aria-labelledby="menu2">
+        <button onclick="myFunction('14')" class="btn btn-primary btn-lg btn-block w-100" type="button"  data-toggle="dropdown">2014</button>
+        <ul class="dropdown-menu1 bg-secondary" role="menu" aria-labelledby="menu2" id="14">
 
         </ul>
     </div>
     <div class="dropdown row w-100 mb-2">
-        <button class="btn btn-primary btn-lg btn-block w-100 dropdown-toggle menu2" type="button"  data-toggle="dropdown">2018</button>
-        <ul class="dropdown-menu1 bg-secondary" role="menu" aria-labelledby="menu2">
+        <button onclick="myFunction('13')" class="btn btn-primary btn-lg btn-block w-100" type="button"  data-toggle="dropdown">2013</button>
+        <ul class="dropdown-menu1 bg-secondary" role="menu" aria-labelledby="menu2" id="13">
 
         </ul>
     </div>
     <div class="dropdown row w-100 mb-2">
-        <button class="btn btn-primary btn-lg btn-block w-100 dropdown-toggle menu2" type="button"  data-toggle="dropdown">2017</button>
-        <ul class="dropdown-menu1 bg-secondary" role="menu" aria-labelledby="menu2">
+        <button onclick="myFunction('12')" class="btn btn-primary btn-lg btn-block w-100" type="button"  data-toggle="dropdown">2012</button>
+        <ul class="dropdown-menu1 bg-secondary" role="menu" aria-labelledby="menu2" id="12">
 
         </ul>
     </div>
     <div class="dropdown row w-100 mb-2">
-        <button class="btn btn-primary btn-lg btn-block w-100 dropdown-toggle menu2" type="button"  data-toggle="dropdown">2016</button>
-        <ul class="dropdown-menu1 bg-secondary" role="menu" aria-labelledby="menu2">
+        <button onclick="myFunction('11')" class="btn btn-primary btn-lg btn-block w-100" type="button"  data-toggle="dropdown">2011</button>
+        <ul class="dropdown-menu1 bg-secondary" role="menu" aria-labelledby="menu2" id="11">
 
         </ul>
     </div>
     <div class="dropdown row w-100 mb-2">
-        <button class="btn btn-primary btn-lg btn-block w-100 dropdown-toggle menu2" type="button"  data-toggle="dropdown">2015</button>
-        <ul class="dropdown-menu1 bg-secondary" role="menu" aria-labelledby="menu2">
+        <button onclick="myFunction('10')" class="btn btn-primary btn-lg btn-block w-100" type="button"  data-toggle="dropdown">2010</button>
+        <ul class="dropdown-menu1 bg-secondary" role="menu" aria-labelledby="menu2" id="10">
 
         </ul>
     </div>
     <div class="dropdown row w-100 mb-2">
-        <button class="btn btn-primary btn-lg btn-block w-100 dropdown-toggle menu2" type="button"  data-toggle="dropdown">2014</button>
-        <ul class="dropdown-menu1 bg-secondary" role="menu" aria-labelledby="menu2">
-
-        </ul>
-    </div>
-    <div class="dropdown row w-100 mb-2">
-        <button class="btn btn-primary btn-lg btn-block w-100 dropdown-toggle menu2" type="button"  data-toggle="dropdown">2013</button>
-        <ul class="dropdown-menu1 bg-secondary" role="menu" aria-labelledby="menu2">
-
-        </ul>
-    </div>
-    <div class="dropdown row w-100 mb-2">
-        <button class="btn btn-primary btn-lg btn-block w-100 dropdown-toggle menu2" type="button"  data-toggle="dropdown">2012</button>
-        <ul class="dropdown-menu1 bg-secondary" role="menu" aria-labelledby="menu2">
-
-        </ul>
-    </div>
-    <div class="dropdown row w-100 mb-2">
-        <button class="btn btn-primary btn-lg btn-block w-100 dropdown-toggle menu2" type="button"  data-toggle="dropdown">2011</button>
-        <ul class="dropdown-menu1 bg-secondary" role="menu" aria-labelledby="menu2">
-
-        </ul>
-    </div>
-    <div class="dropdown row w-100 mb-2">
-        <button class="btn btn-primary btn-lg btn-block w-100 dropdown-toggle menu2" type="button"  data-toggle="dropdown">2010</button>
-        <ul class="dropdown-menu1 bg-secondary" role="menu" aria-labelledby="menu2">
-
-        </ul>
-    </div>
-    <div class="dropdown row w-100 mb-2">
-        <button class="btn btn-primary btn-lg btn-block w-100 dropdown-toggle menu2" type="button"  data-toggle="dropdown">2009</button>
-        <ul class="dropdown-menu1 bg-secondary" role="menu" aria-labelledby="menu2">
-
+        <button onclick="myFunction('09')" class="btn btn-primary btn-lg btn-block w-100" type="button"  data-toggle="dropdown">2009</button>
+        <ul class="dropdown-menu1 bg-secondary" role="menu" aria-labelledby="menu2" id="09">
+            <div class="row"><a class="btn btn-secondary" href="" role="button"></a></div>
         </ul>
     </div>
 </div>
