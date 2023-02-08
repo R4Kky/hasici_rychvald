@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="bootstrap/bootstrap.bundle.js"></script>
+    <title>SDH Rychvald</title>
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar sticky-top navbar-light bg-light">
+            <div class="container">
+                <div class="row w-100">
+                    <div class="col"><h1 class="text-primary">SDH Rychvald</h1></div>
+                    <div class="col">
+                        <a class="btn btn-secondary" href="index.php" role="button">Úvod</a>
+                        <span class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Aktuality
+                            <span class="caret"></span></button>
+                            <ul class="dropdown-menu bg-secondary" role="menu" aria-labelledby="menu1">
+                                <div class="row"><a class="btn btn-secondary" href="#" role="button">Novinky</a></div>
+                                <div class="row"><a class="btn btn-secondary" href="#" role="button">Články</a></div>
+                                <div class="row"><a class="btn btn-secondary" href="#" role="button">Fotogaleri</a></div>
+                                <div class="row"><a class="btn btn-secondary" href="#" role="button">Prevence</a></div>
+                            </ul>
+                        </span>
+                        <span class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="menu2" data-toggle="dropdown">JSDH
+                            <span class="caret"></span></button>
+                            <ul class="dropdown-menu bg-secondary" role="menu" aria-labelledby="menu2">
+                                <div class="row"><a class="btn btn-secondary" href="#" role="button">Naše technické prostředky</a></div>
+                                <div class="row"><a class="btn btn-secondary" href="#" role="button">Výjezdová jednotka</a></div>
+                                <div class="row"><a class="btn btn-secondary" href="#" role="button">Výjezdy</a></div>
+                            </ul>
+                        </span>
+                        <span class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="menu3" data-toggle="dropdown">SDH Rychvald
+                            <span class="caret"></span></button>
+                            <ul class="dropdown-menu bg-secondary" role="menu" aria-labelledby="menu3">
+                                <div class="row"><a class="btn btn-secondary" href="#" role="button">Výbor SDH Rychvald</a></div>
+                                <div class="row"><a class="btn btn-secondary" href="history.php" role="button">Naše historie</a></div>
+                                <div class="row"><a class="btn btn-secondary" href="#" role="button">Členská základna</a></div>
+                                <div class="row"><a class="btn btn-secondary" href="#" role="button">Družební spolupráce</a></div>
+                                <div class="row"><a class="btn btn-secondary" href="#" role="button">Dotace města Rychvald</a></div>
+                            </ul>
+                        </span>
+                        <span class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="menu4" data-toggle="dropdown">Požární sport
+                            <span class="caret"></span></button>
+                            <ul class="dropdown-menu bg-secondary" role="menu" aria-labelledby="menu4">
+                                <div class="row"><a class="btn btn-secondary" href="#" role="button">Mladí hasiči</a></div>
+                                <div class="row"><a class="btn btn-secondary" href="#" role="button">Soutěže</a></div>
+                                <div class="row"><a class="btn btn-secondary" href="#" role="button">Partneři</a></div>
+                            </ul>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
