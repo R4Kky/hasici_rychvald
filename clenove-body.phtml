@@ -1,34 +1,42 @@
 <div class="container mb-5">
-    <table class="w-100">
-        <div class="row text-center">
-            <thead class="text-center">
-                <tr>
-                    <th>Jméno</th>
-                    <th>Nejvyšší Vyznamenání</th>
-                    <th>Medaile/Stužka</th>
-                </tr>
-            </thead>
+    <div class="d-flex justify-content-center">
+        <table class="text-center">
+            <div>
+                <thead>
+                    <tr>
+                        <th>Jméno</th>
+                        <th>Nejvyšší Vyznamenání</th>
+                        <th>Medaile/Stužka</th>
+                    </tr>
+                </thead>
+            </div>
+            <tbody>
+                <?php  foreach ($clenove as $clen) { ?>
+                    <tr>
+                        <td class="col"><?= $clen["jmeno"] ?></td>
+                        <td class="col"><?= $clen["vyznamenani"] ?></td>  
+                        <td class="col"><?= $clen["stuzka"] ?></td>
+                    </tr>
+                <?php  } ?>
+            </tbody>
         </div>
-        <tbody class="text-center">
-<?php  foreach ($clenove as $clen) { ?>
-            <tr>
-                <td><?= $clen["jmeno"] ?></td>
-                <td><?= $clen["vyznamenani"] ?></td>  
-                <td><?= $clen["stuzka"] ?></td>
-            </tr>
-<?php  } ?>
-        </tbody>
     </table>
-    <table class="w-100 container">
-        <thead class="text-center"><div class="row text-center"><h2>Mladí hasiči</h2></div></thead>
-        <tbody class="text-center">
-<?php  foreach ($MH as $mladyHasic) { ?>
-                <tr class="row">
-                    <td class="col"><?= $mladyHasic["jmeno"] ?></td>
-                    <td class="col"><?= $mladyHasic["vyznamenani"] ?></td>  
-                    <td class="col"><?= $mladyHasic["stuzka"] ?></td>
-                </tr>
-<?php  } ?>
-        </tbody>
-    </table>
+</div>
+<div class="text-center mt-5">
+    <h2>Mladí hasiči</h2>
+</div>
+<div class="container mb-5">
+    <div class="d-flex justify-content-center">
+        <table class="text-center">
+            <tbody>
+                <?php  foreach ($MH as $mladyHasic) { ?>
+                    <tr>
+                        <td class="col"><?= $mladyHasic["jmeno"] ?></td>
+                        <td class="col"><?= $mladyHasic["vyznamenani"] ?></td>  
+                        <td class="col"><?= $mladyHasic["stuzka"] ?></td>
+                    </tr>
+                <?php  } ?>
+            </tbody>
+        </table>
+    </div>
 </div>
