@@ -19,4 +19,16 @@
 <?php  } ?>
         </tbody>
     </table>
+    <table class="w-100 container">
+        <thead class="text-center"><div class="row text-center"><h2>Mladí hasiči</h2></div></thead>
+        <tbody class="text-center">
+<?php  foreach ($MH as $mladyHasic) { ?>
+                <tr class="row">
+                    <td class="col"><?= $mladyHasic["jmeno"] ?></td>
+                    <td class="col"><?= $mladyHasic["vyznamenani"] ?></td>  
+                    <td class="col"><?= $mladyHasic["stuzka"] ?></td>
+                </tr>
+<?php  } ?>
+        </tbody>
+    </table>
 </div>
