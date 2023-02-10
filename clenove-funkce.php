@@ -4,6 +4,7 @@ function zobrazCleny($db) {
         select *
         from clenove
         where mh=0
+        order by jmeno
     ";
     
     $vysledekCleni = mysqli_query($db, $dotazClenove);
@@ -15,6 +16,7 @@ function zobrazMH($db) {
         select *
         from clenove
         where mh=1
+        order by jmeno
     ";
 
     $vysledekMH = mysqli_query($db, $dotazMH);
