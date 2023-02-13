@@ -3,6 +3,7 @@ function zobrazNovinky($db) {
     $dotazNovinky = "
     select *
     from novinky
+    order by datum desc
     ";
 
     $vysledekNovinky = mysqli_query($db, $dotazNovinky);
