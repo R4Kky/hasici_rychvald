@@ -121,7 +121,18 @@ $v2014 = zobraz2014($db);
 ?>
 
 <div class="container mt-2 mb-5">
-<h2 class="text-center">2022</h2>
+    <h2 class="text-center">2022</h2>
+    <div class="row text-center">
+        <div class="col">
+            <p><b>Datum</b></p>
+        </div>
+        <div class="col">
+            <p><b>Typ události</b></p>
+        </div>
+        <div class="col">
+            <p><b>technika</b></p>
+        </div>
+    </div>
     <?php foreach ($v2022 as $vyjezd) { ?>
         <div class="row text-center">
             <div class="col">
