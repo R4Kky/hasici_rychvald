@@ -13,6 +13,7 @@ function vedouci($db) {
 }
 $vedouci = vedouci($db);
 require("nav.phtml");
+require("footer.phtml");
 ?>
 
 <div class="container mt-2 mb-5">
@@ -45,7 +46,3 @@ require("nav.phtml");
         </table>
     </div>
 </div>
-
-<?php
-require("footer.phtml");
-?>

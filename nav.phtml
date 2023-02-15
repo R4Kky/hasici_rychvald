@@ -26,56 +26,77 @@
         .dropdown:hover .dropdown-menu {
             display: block;
         }
+        .show {
+            display: block;
+        }
     </style>
+<script>
+function myFunction(id) {
+    document.getElementById(id).classList.toggle("show");
+}
+</script>
 </head>
 <body>
     <header>
         <nav class="pt-2 pb-2 bg-secondary">
             <div class="container">
                 <div class="row w-100">
-                    <div class="col text-center"><h1 class="text-danger"><a href="index.php" class="navbar-brand">SDH Rychvald</a></h1></div>
-                    <div class="col pt-2">
-                        <a class="btn btn-danger" href="index.php" role="button">Úvod</a>
-                        <span class="dropdown">
-                            <button class="btn btn-danger dropdown-toggle" type="button" id="menu" data-toggle="dropdown">Aktuality
-                            <span class="caret"></span></button>
-                            <ul class="dropdown-menu bg-danger" role="menu" aria-labelledby="menu">
-                                <div class="row"><a class="btn btn-danger" href="novinky.php" role="button">Novinky</a></div>
-                                <div class="row"><a class="btn btn-danger" href="clanky.php" role="button">Články</a></div>
-                                <div class="row"><a class="btn btn-danger" href="gallery.php" role="button">Fotogalerie</a></div>
-                                <div class="row"><a class="btn btn-danger" href="prevence.php" role="button">Prevence</a></div>
-                            </ul>
-                        </span>
-                        <span class="dropdown">
-                            <button class="btn btn-danger dropdown-toggle" type="button" id="menu" data-toggle="dropdown">JSDH
-                            <span class="caret"></span></button>
-                            <ul class="dropdown-menu bg-danger" role="menu" aria-labelledby="menu">
-                                <div class="row"><a class="btn btn-danger" href="technicke_prostredky.php" role="button">Naše technické prostředky</a></div>
-                                <div class="row"><a class="btn btn-danger" href="vyjezdova_jednotka.php" role="button">Výjezdová jednotka</a></div>
-                                <div class="row"><a class="btn btn-danger" href="vyjezdy.php" role="button">Výjezdy</a></div>
-                            </ul>
-                        </span>
-                        <span class="dropdown">
-                            <button class="btn btn-danger dropdown-toggle" type="button" id="menu" data-toggle="dropdown">SDH Rychvald
-                            <span class="caret"></span></button>
-                            <ul class="dropdown-menu bg-danger" role="menu" aria-labelledby="menu">
-                                <div class="row"><a class="btn btn-danger" href="vybor.php" role="button">Výbor SDH Rychvald</a></div>
-                                <div class="row"><a class="btn btn-danger" href="history.php" role="button">Naše historie</a></div>
-                                <div class="row"><a class="btn btn-danger" href="clenove.php" role="button">Členská základna</a></div>
-                                <div class="row"><a class="btn btn-danger" href="druzebni_spoluprace.php" role="button">Družební spolupráce</a></div>
-                                <div class="row"><a class="btn btn-danger" href="dotace.php" role="button">Dotace města Rychvald</a></div>
-                            </ul>
-                        </span>
-                        <span class="dropdown">
-                            <button class="btn btn-danger dropdown-toggle" type="button" id="menu" data-toggle="dropdown">Požární sport
-                            <span class="caret"></span></button>
-                            <ul class="dropdown-menu bg-danger" role="menu" aria-labelledby="menu">
-                                <div class="row"><a class="btn btn-danger" href="mladi_hasici.php" role="button">Mladí hasiči</a></div>
-                                <div class="row"><a class="btn btn-danger" href="souteze.php" role="button">Soutěže</a></div>
-                                <div class="row"><a class="btn btn-danger" href="partneri.php" role="button">Partneři</a></div>
-                            </ul>
-                        </span>
+                    <div class="col text-center">
+                        <h1 class="color-danger">SDH Rychvald</h1>
                     </div>
+                    <div class="col">
+                <nav class="navbar navbar-expand-sm navbar-dark">
+                    <div class="container">
+                        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#n_bar" aria-controls="navbarNavAltMarkup" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse btn-danger" id="n_bar">
+                            <ul class="navbar-nav">
+                                <a class="btn btn-danger" href="index.php" role="button">Úvod</a>
+                                <span class="dropdown">
+                                    <button onclick="myFunction('a')" class="btn btn-danger dropdown-toggle w-100" type="button" id="menu" data-toggle="dropdown">Aktuality
+                                    <span class="caret"></span></button>
+                                    <ul class="dropdown-menu bg-danger" role="menu" aria-labelledby="menu" id="a">
+                                        <div class="row"><a class="btn btn-danger" href="novinky.php" role="button">Novinky</a></div>
+                                        <div class="row"><a class="btn btn-danger" href="clanky.php" role="button">Články</a></div>
+                                        <div class="row"><a class="btn btn-danger" href="gallery.php" role="button">Fotogalerie</a></div>
+                                        <div class="row"><a class="btn btn-danger" href="prevence.php" role="button">Prevence</a></div>
+                                    </ul>
+                                </span>
+                                <span class="dropdown">
+                                    <button onclick="myFunction('b')" class="btn btn-danger dropdown-toggle w-100" type="button" id="menu" data-toggle="dropdown">JSDH
+                                    <span class="caret"></span></button>
+                                    <ul class="dropdown-menu bg-danger" role="menu" aria-labelledby="menu" id="b">
+                                        <div class="row"><a class="btn btn-danger" href="technicke_prostredky.php" role="button">Naše technické prostředky</a></div>
+                                        <div class="row"><a class="btn btn-danger" href="vyjezdova_jednotka.php" role="button">Výjezdová jednotka</a></div>
+                                        <div class="row"><a class="btn btn-danger" href="vyjezdy.php" role="button">Výjezdy</a></div>
+                                    </ul>
+                                </span>
+                                <span class="dropdown">
+                                    <button onclick="myFunction('c')" class="btn btn-danger dropdown-toggle w-100" type="button" id="menu" data-toggle="dropdown">SDH Rychvald
+                                    <span class="caret"></span></button>
+                                    <ul class="dropdown-menu bg-danger" role="menu" aria-labelledby="menu" id="c">
+                                        <div class="row"><a class="btn btn-danger" href="vybor.php" role="button">Výbor SDH Rychvald</a></div>
+                                        <div class="row"><a class="btn btn-danger" href="history.php" role="button">Naše historie</a></div>
+                                        <div class="row"><a class="btn btn-danger" href="clenove.php" role="button">Členská základna</a></div>
+                                        <div class="row"><a class="btn btn-danger" href="druzebni_spoluprace.php" role="button">Družební spolupráce</a></div>
+                                        <div class="row"><a class="btn btn-danger" href="dotace.php" role="button">Dotace města Rychvald</a></div>
+                                    </ul>
+                                </span>
+                                <span class="dropdown">
+                                    <button onclick="myFunction('d')" class="btn btn-danger dropdown-toggle w-100" type="button" id="menu" data-toggle="dropdown">Požární sport
+                                    <span class="caret"></span></button>
+                                    <ul class="dropdown-menu bg-danger" role="menu" aria-labelledby="menu" id="d">
+                                        <div class="row"><a class="btn btn-danger" href="mladi_hasici.php" role="button">Mladí hasiči</a></div>
+                                        <div class="row"><a class="btn btn-danger" href="souteze.php" role="button">Soutěže</a></div>
+                                        <div class="row"><a class="btn btn-danger" href="partneri.php" role="button">Partneři</a></div>
+                                    </ul>
+                                </span>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                </div>
                 </div>
             </div>
         </nav>
