@@ -3,6 +3,12 @@ require("nav.phtml");
 require("footer.phtml");
 ?>
 
+<style>
+    .minimum {
+        min-width: 200px
+    }
+</style>
+
 <div class="container mt-2 mb-5">
     <div class="row text-center">
         <h2>Družební spolupráce</h2>
@@ -20,12 +26,12 @@ require("footer.phtml");
             <p>Dne 7. května 2016 se naši členové zúčastnili na pozvání našich kolegů z <b>Osp Krzyżowice</b> Dnia Strażaka v polské Pszczyně. Zde na náměstí proběhl slavnostní ceremoniál, při kterém byly předávány vyznamenání. Po skončení slavnostní části pak na náměstí následovaly ukázky z činnosti hasičů</p>
         </div>
         <div class="col">
-            <img src="galery/Rychvald_druzebni_spoluprace_01.jpg" alt="" class="img-fluid" width="400" height="auto">
+            <img src="galery/Rychvald_druzebni_spoluprace_01.jpg" alt="" class="img-fluid minimum" width="400" height="auto">
         </div>
     </div>
     <div class="row mt-5 text-center">
         <div class="col">
-            <img src="galery/Rychvald_druzebni_spoluprace_02.jpg" alt="" class="img-fluid" width="400" height="auto">
+            <img src="galery/Rychvald_druzebni_spoluprace_02.jpg" alt="" class="img-fluid minimum" width="500" height="auto">
         </div>
         <div class="col">
             <h3>20 let přátelství mezi hasiči z Rychvaldu a Krzyžowic</h3>

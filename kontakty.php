@@ -1,10 +1,14 @@
 <?php
 require("nav.phtml");
 ?>
-
+<style>
+    .minimum {
+        min-width: 200px
+    }
+</style>
 <div class="container mt-2 mb-5">
     <div class="row">
-        <div class="col text-center">
+        <div class="col text-center minimum">
             <img src="galery/Rychvald_kontaky_01.jpg" alt="" class="w-50">
         </div>
         <div class="col text-center">

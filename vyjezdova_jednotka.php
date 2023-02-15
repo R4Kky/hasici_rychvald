@@ -1,7 +1,11 @@
 <?php
 require("nav.phtml");
 ?>
-
+<style>
+    .minimum {
+        min-width: 200px;
+    }
+</style>
 <div class="container mt-2 mb-5">
     <div class="row text-center">
         <p>Jednotka se schází každou sudou neděli od 8:00.</p>
@@ -58,10 +62,10 @@ require("nav.phtml");
     <div class="row text-center">
         <p>Zajíc Zdeněk</p>
     </div>
-    <div class="row">
-        <img src="galery/Rychvald_vyj_01.jpg" alt="" class="col-4">
-        <img src="galery/Rychvald_vyj_02.jpg" alt="" class="col-4">
-        <img src="galery/Rychvald_vyj_03.jpg" alt="" class="col-4">
+    <div class="row justify-content-center w-100 d-flex">
+        <img src="galery/Rychvald_vyj_01.jpg" alt="" class="col-4 minimum d-flex">
+        <img src="galery/Rychvald_vyj_02.jpg" alt="" class="col-4 minimum d-flex">
+        <img src="galery/Rychvald_vyj_03.jpg" alt="" class="col-4 minimum d-flex">
     </div>
 </div>
 

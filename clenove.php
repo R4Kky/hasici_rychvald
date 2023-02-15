@@ -36,6 +36,13 @@ $MH = zobrazMH($db);
         padding-left: 10px;
         padding-right: 10px;
     }
+    @media screen and (max-width: 600px) {
+        tr .clen {
+            padding-left: 0px;
+            padding-right: 0px;
+            max-width: 100px !important;
+        }
+    }
 </style>
 <div class="container mb-5 mt-2">
     <div class="d-flex justify-content-center">
@@ -51,7 +58,7 @@ $MH = zobrazMH($db);
             </div>
             <tbody>
                 <?php  foreach ($clenove as $clen) { ?>
-                    <tr>
+                    <tr class="trow">
                         <td class="col clen"><?= $clen["jmeno"] ?></td>
                         <td class="col clen"><?= $clen["vyznamenani"] ?></td>  
                         <td class="col clen"><?= $clen["stuzka"] ?></td>
@@ -69,7 +76,7 @@ $MH = zobrazMH($db);
         <table class="text-center">
             <tbody>
                 <?php  foreach ($MH as $mladyHasic) { ?>
-                    <tr>
+                    <tr class="trow">
                         <td class="col"><?= $mladyHasic["jmeno"] ?></td>
                         <td class="col"><?= $mladyHasic["vyznamenani"] ?></td>  
                         <td class="col"><?= $mladyHasic["stuzka"] ?></td>

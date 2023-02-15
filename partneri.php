@@ -17,10 +17,10 @@ require("nav.phtml");
     </div>
     <div class="row text-center">
         <div class="col">
-            <img src="galery/Rychvald_partner_01.jpg" alt="" width="300" height="auto">
+            <img src="galery/Rychvald_partner_01.jpg" alt="" width="300" height="auto" class="img-fluid">
         </div>
         <div class="col">
-            <img src="galery/Rychvald_partner_02.jpg" alt="" width="300" height="auto">
+            <img src="galery/Rychvald_partner_02.jpg" alt="" width="300" height="auto" class="img-fluid">
         </div>
     </div>
     <div class="row text-center mt-5">
@@ -28,7 +28,7 @@ require("nav.phtml");
     </div>
     <div class="row">
         <div class="text-center">
-            <a href="https://www.msk.cz"><img src="galery/Rychvald_msk_logo.jpg" alt="" width="300" height="auto"></a>
+            <a href="https://www.msk.cz"><img src="galery/Rychvald_msk_logo.jpg" alt="" width="300" height="auto" class="img-fluid"></a>
         </div>
     </div>
     <div class="row text-center">
@@ -36,18 +36,18 @@ require("nav.phtml");
     </div>
     <div class="row text-center">
         <div class="col">
-            <img src="galery/Rychvald_partner_03.jpg" alt="" width="300" height="auto">
+            <img src="galery/Rychvald_partner_03.jpg" alt="" width="300" height="auto" class="img-fluid">
         </div>
         <div class="col">
-            <img src="galery/Rychvald_partner_04.jpg" alt="" width="300" height="auto">
+            <img src="galery/Rychvald_partner_04.jpg" alt="" width="300" height="auto" class="img-fluid">
         </div>
     </div>
     <div class="row text-center">
         <div class="col">
-            <img src="galery/Rychvald_partner_05.jpg" alt="" width="300" height="auto">
+            <img src="galery/Rychvald_partner_05.jpg" alt="" width="300" height="auto" class="img-fluid">
         </div>
         <div class="col">
-            <img src="galery/Rychvald_partner_06.jpg" alt="" width="300" height="auto">
+            <img src="galery/Rychvald_partner_06.jpg" alt="" width="300" height="auto" class="img-fluid">
         </div>
     </div>
 </div>
