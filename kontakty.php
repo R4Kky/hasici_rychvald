@@ -3,7 +3,7 @@ require("nav.phtml");
 ?>
 <style>
     .minimum {
-        min-width: 200px
+        min-width: 60%;
     }
 </style>
 <div class="container mt-2 mb-5">

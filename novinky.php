@@ -36,7 +36,12 @@ $novinky=zobrazNovinky($db);
   text-decoration: none;
   display: block;
 }
-.show {display:block;}
+.show {
+  display:block;
+}
+.text-justify {
+  text-align: justify;
+}
 </style>
 <script>
 function myFunction(id) {
@@ -45,7 +50,7 @@ function myFunction(id) {
 </script>
 <div class="container mb-5 mt-2">
     <?php foreach($novinky as $novinka) { ?>
-        <div class="row mb-2">
+        <div class="row mb-2 text-justify">
             <button onclick="myFunction('<?=$novinka['nazev']?>')" class="btn btn-lg btn-block btn-primary" data-toggle="dropdown"><?=$novinka['nazev']?></button>
             <ul class="dropdown-menu1" id="<?=$novinka['nazev']?>">
                 <p class="mt-2"><?=$novinka['datum']?></p>

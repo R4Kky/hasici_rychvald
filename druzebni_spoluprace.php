@@ -5,7 +5,7 @@ require("footer.phtml");
 
 <style>
     .minimum {
-        min-width: 200px
+        min-width: 280px;
     }
 </style>
 
@@ -35,8 +35,8 @@ require("footer.phtml");
         </div>
         <div class="col">
             <h3>20 let přátelství mezi hasiči z Rychvaldu a Krzyžowic</h3>
-            <p>V sobotu 7.11.2015 jsme oslavili  20 let od podpisu“ Dekretu o mezinárodní spolupráci s OSP Krzyžowice“. U této příležitosti jsme pozvali představitele  OSP Krzyžowice  do Hasičské zbrojnice Rychvald  na slavnostní schůzi . Tam  jsme zhodnotili celou historii naší spolupráce a zavzpomínali na společné akce. </p>
-            <p>Před 20 lety se sešli nadšení hasiči  a podepsali Dekret o mezinárodní spolupráci  mezi našimi sbory. Začala se psát nová historie.  Během těchto let se přátelství mezi členy rozvinulo až k přátelství celých rodin. Pravidelně se scházíme na akcích a vyměňujeme  si své zkušenosti a poznatky.  V současné době se spolupráce rozšiřuje ještě více, k čemuž přispěla i mezinárodní soutěž družebních sborů okrsku Orlová v požárním útoku.   V letošním roce  proběhl  5. ročník této soutěže a družstva SDH Rychvald a OSP Krzyžowice  vyhrála 1. místo a získala putovní pohár do svého držení natrvalo.  Rozvíjí se také spolupráce mezi mladými hasiči, kteří si našli v Polsku nové kamarády.</p>
+            <p>V sobotu 7.11.2015 jsme oslavili  20 let od podpisu“ Dekretu o mezinárodní spolupráci s OSP Krzyzowice“. U této příležitosti jsme pozvali představitele  OSP Krzyzowice  do Hasičské zbrojnice Rychvald  na slavnostní schůzi . Tam  jsme zhodnotili celou historii naší spolupráce a zavzpomínali na společné akce. </p>
+            <p>Před 20 lety se sešli nadšení hasiči  a podepsali Dekret o mezinárodní spolupráci  mezi našimi sbory. Začala se psát nová historie.  Během těchto let se přátelství mezi členy rozvinulo až k přátelství celých rodin. Pravidelně se scházíme na akcích a vyměňujeme  si své zkušenosti a poznatky.  V současné době se spolupráce rozšiřuje ještě více, k čemuž přispěla i mezinárodní soutěž družebních sborů okrsku Orlová v požárním útoku.   V letošním roce  proběhl  5. ročník této soutěže a družstva SDH Rychvald a OSP Krzyzowice  vyhrála 1. místo a získala putovní pohár do svého držení natrvalo.  Rozvíjí se také spolupráce mezi mladými hasiči, kteří si našli v Polsku nové kamarády.</p>
             <p>Přejeme si tedy, ať nám naše přátelství vzkvétá  i do dalších let.</p>
         </div>
     </div>

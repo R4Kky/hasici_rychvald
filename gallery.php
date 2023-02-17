@@ -12,7 +12,6 @@ require("nav.phtml");
 .dropdown-menu1 {
   display: none;
   position: relative;
-  background-color: #f1f1f1;
   min-width: 160px;
   z-index: 1;
 }
@@ -42,10 +41,10 @@ window.onclick = function(event) {
 }
 </script>
 <div class="container mb-5 mt-2 text-center">
-    <div class=" dropdown row w-100 mb-2">
+    <div class="dropdown row mb-2 w-100">
         <button onclick="myFunction('22')" class="btn btn-primary btn-lg btn-block w-100" type="button" data-toggle="dropdown">2022</button>
         <ul class="dropdown-menu1 bg-secondary" id="22">
-        <div class="row"><a class="btn btn-secondary" href="https://zuzumalicka.rajce.idnes.cz/14.10.2022_-_Drakiada/" role="button">Drakiáda - 14.10.2022</a></div>
+            <div class="row"><a class="btn btn-secondary" href="https://zuzumalicka.rajce.idnes.cz/14.10.2022_-_Drakiada/" role="button">Drakiáda - 14.10.2022</a></div>
             <div class="row"><a class="btn btn-secondary" href="https://zuzumalicka.rajce.idnes.cz/11.9.2022_-_MLOK_Vrbice/" role="button">MLOK Vrbice - 11.9.2022</a></div>
             <div class="row"><a class="btn btn-secondary" href="https://zuzumalicka.rajce.idnes.cz/10.9.2022_-_MLOK_Horni_Sucha/" role="button">MLOK Horní Suchá - 10.9.2022</a></div>
             <div class="row"><a class="btn btn-secondary" href="https://zuzumalicka.rajce.idnes.cz/3.9.2022_-_MLOK_Rychvald/" role="button">MLOK Rychvald - 3.9.2022</a></div>

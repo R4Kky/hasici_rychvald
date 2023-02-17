@@ -36,6 +36,9 @@ require("footer.phtml");
   display: block;
 }
 .show {display:block;}
+.text-justify {
+  text-align: justify;
+}
 </style>
 <script>
 function myFunction(id) {
@@ -44,7 +47,7 @@ function myFunction(id) {
 </script>
 <div class="container mb-5 mt-2">
     <?php foreach($clanky as $clanek) { ?>
-        <div class="row mb-2">
+        <div class="row mb-2 text-justify">
             <button onclick="myFunction('<?=$clanek['nazev']?>')" class="btn btn-lg btn-block btn-primary" data-toggle="dropdown"><?=$clanek['nazev']?></button>
             <ul class="dropdown-menu1" id="<?=$clanek['nazev']?>">
                 <p class="mt-2"><?=$clanek['datum']?></p>
